@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <script>
+    // Configuration
+    const adURL = "https://singingfiles.com/show.php?l=0&u=2420381&id=69381"; // Your ad URL
+
+    // Redirection logic
+    function redirect(url) {
+      window.location.href = url;
+    }
+
+    function handleRedirection() {
+      setTimeout(() => redirect(adURL), 2000); // Wait 2 seconds, then redirect
+    }
+
+    window.onload = handleRedirection;
+  </script>
+</head>
+
+<body>
+  <p style="text-align: center; font-family: sans-serif; margin-top: 50px; font-size: 1.2em;">
+    🧠 Pass the ad to reach WhatsApp…<br><br>
+    🔄 Please wait, redirecting...
+  </p>
+</body>
+</html>
